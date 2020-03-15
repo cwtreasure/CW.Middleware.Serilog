@@ -1,0 +1,28 @@
+name: BaseExtensions
+
+on:
+  push:
+    branches:
+    - master
+    - release/*
+
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 3.1.101
+    - name: Build with dotnet
+      run: dotnet build --configuration Release
+    - name: Test with dotnet
+      run: dotnet test
+    - name: Pack with dotnet
+      run: dotnet pack /home/runner/work/CW.Middleware.Serilog/CW.Middleware.Serilog/src/CW.Middleware.Serilog/CW.Middleware.Serilog.csproj -o /home/runner/work -c Release --no-build
+    - name: Push to nuget
+      run: dotnet nuget push /home/runner/work/*.nupkg -k ${{ secrets.Nuget_Key }} -s https://www.nuget.org/api/v2/package

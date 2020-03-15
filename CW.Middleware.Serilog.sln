@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AC0778AB-B13F-4F45-A607-3C995136D377}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{808271BB-F8B9-4BDF-97D7-79CEB342E3FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_stylecop", "_stylecop", "{34467DF6-330E-475D-B938-87CA876179E5}"
+	ProjectSection(SolutionItems) = preProject
+		_stylecop\codeanalysis.ruleset = _stylecop\codeanalysis.ruleset
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0EB43128-FABD-435A-B4BE-95DC170BA84F}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW.Middleware.Serilog", "src\CW.Middleware.Serilog\CW.Middleware.Serilog.csproj", "{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW.Middleware.Serilog.Tests", "tests\CW.Middleware.Serilog.Tests\CW.Middleware.Serilog.Tests.csproj", "{42F027BF-BDC7-4CFD-875B-0D4CCF309985}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{7F022A69-7F38-4F20-AB10-91BD58C41C07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CW.Middleware.Serilog.WebApp", "sample\CW.Middleware.Serilog.WebApp\CW.Middleware.Serilog.WebApp.csproj", "{58306E84-0578-4681-A2A7-FC7CB7691660}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F027BF-BDC7-4CFD-875B-0D4CCF309985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F027BF-BDC7-4CFD-875B-0D4CCF309985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F027BF-BDC7-4CFD-875B-0D4CCF309985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F027BF-BDC7-4CFD-875B-0D4CCF309985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58306E84-0578-4681-A2A7-FC7CB7691660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58306E84-0578-4681-A2A7-FC7CB7691660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58306E84-0578-4681-A2A7-FC7CB7691660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58306E84-0578-4681-A2A7-FC7CB7691660}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC75CCA3-F793-4D7F-8F8E-00A3FDFC0172} = {AC0778AB-B13F-4F45-A607-3C995136D377}
+		{42F027BF-BDC7-4CFD-875B-0D4CCF309985} = {808271BB-F8B9-4BDF-97D7-79CEB342E3FC}
+		{58306E84-0578-4681-A2A7-FC7CB7691660} = {7F022A69-7F38-4F20-AB10-91BD58C41C07}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0D217D48-0E98-40C7-9129-E54AE2ABE6E4}
+	EndGlobalSection
+EndGlobal
