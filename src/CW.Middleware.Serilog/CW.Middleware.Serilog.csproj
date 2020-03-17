@@ -4,7 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <Owners>Catcher Wong</Owners>
     <Authors>Catcher Wong</Authors>
-    <Version>0.0.6</Version>
+    <Version>0.0.7</Version>
     <Description>
       Serilog middleware
     </Description>

@@ -1,4 +1,4 @@
-name: BaseExtensions
+name: Serilog Middleware
 
 on:
   push:
