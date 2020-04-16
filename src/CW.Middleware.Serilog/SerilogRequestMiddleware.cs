@@ -27,6 +27,14 @@
 
         public async Task Invoke(HttpContext httpContext)
         {
+            // handle head and options methods here.
+            if (httpContext.Request.Method.Equals(HttpMethods.Head, StringComparison.OrdinalIgnoreCase)
+                || httpContext.Request.Method.Equals(HttpMethods.Options, StringComparison.OrdinalIgnoreCase))
+            {
+                httpContext.Response.StatusCode = 200;
+                return;
+            }
+
             List<ILogEventEnricher> properties = new List<ILogEventEnricher>();
 
             if (_options.BuildEventEnricher == null)
